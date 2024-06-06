@@ -72,8 +72,17 @@ void main () {
   var an = [2,3,5,1,9,3,34,12,87,99];
   var ane = an.where((anees) => anees > 15);
   print("$ane ${ane.runtimeType}");
+  //To find Index of element
+  var index = an.indexOf(12);
+  print("The index of 12 in List $an is $index");
 
   var ab = [2,3,5,1,9,3,34,12,87,99];
   ab.retainWhere((ab) => ab > 15); // Retainwhere returns List
   print("$ab ${ab.runtimeType}");
+
+  var x = ["Apple","Mango","Plum"];
+  x.forEach((xy){
+    print(xy);
+  }
+  );
 }
